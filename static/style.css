@@ -1,0 +1,55 @@
+
+:root{
+  --bg: #f4f7fb;
+  --card: #ffffff;
+  --accent: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+body{
+  font-family: Inter, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  margin:0;
+  padding:30px 10px;
+  display:flex;
+  justify-content:center;
+}
+.container{
+  width:100%;
+  max-width:900px;
+  text-align:center;
+}
+h1{ margin-bottom: 10px; }
+.card{
+  background: var(--card);
+  border-radius:12px;
+  box-shadow: 0 6px 18px rgba(22, 27, 35, 0.08);
+  padding:18px;
+  margin:12px 0;
+  text-align:left;
+}
+.form-card{ padding:20px; }
+.row{ display:flex; flex-direction:column; margin-bottom:10px; }
+label{ font-size:14px; margin-bottom:6px; color:#333; }
+input[type=number], select{
+  padding:10px;
+  border-radius:8px;
+  border:1px solid #e3e6ee;
+  font-size:14px;
+}
+.center{ text-align:center; }
+.btn{
+  background: none;
+  padding:12px 18px;
+  border-radius:10px;
+  border:0;
+  color:#fff;
+  cursor:pointer;
+  font-weight:600;
+  background-image: var(--accent);
+  box-shadow: 0 6px 18px rgba(118,75,162,0.18);
+}
+.result-card{ text-align:left; }
+.result-card.approved{ border-left:6px solid #16a34a; }
+.result-card.rejected{ border-left:6px solid #dc2626; }
+.result-card h2{ margin:0 0 6px 0; }
+.details ul{ padding-left:18px; margin:8px 0; }
+footer{ margin-top:12px; font-size:13px; color:#666; text-align:center; }
